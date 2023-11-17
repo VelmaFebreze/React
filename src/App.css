@@ -1,0 +1,121 @@
+* {
+  font-family:'Handlee';
+}
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1603366615917-1fa6dad5c4fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTB8fGJsYWNrJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60");
+  color: #526D82;
+}
+
+.projects {
+  font-size:350%;
+color: #EFFAE9;
+text-shadow: 0 0 5px #78BE98, 
+    0 0 10px #64B48B, 
+    0 0 15px #50AA7D, 
+    0 0 20px #3CA070, 
+    0 0 25px #289562, 
+    0 0 30px #148B55, 
+    0 0 35px #008147;
+animation: glow 1s ease-in-out infinite alternate;
+text-align: center;
+}
+
+.projects-smaller {
+  font-size: 200%;
+  text-align: center;
+}
+
+.project-container {
+display: grid;
+grid-template-rows: 30rem 30rem;
+justify-content: center;
+row-gap: 15rem;
+margin-bottom: 10rem;
+}
+
+.project-item {
+  justify-content: center;
+  text-align: center;
+}
+
+.project-title {
+  font-size: 275%;
+  color: #78BE98;
+}
+
+.project-info {
+  font-size: 1.5rem;
+}
+
+.project-link {
+  font-size: 1.5rem;
+  text-shadow: 0 0 5px #419DE6, 
+    0 0 10px #4495D5, 
+    0 0 15px #478DC5, 
+    0 0 20px #4A85B4, 
+    0 0 25px #4C7DA3, 
+    0 0 30px #4F7593, 
+    0 0 35px #526D82;
+    display: inline;
+    color: #000000;
+  }
+
+.project-link:visited {
+    color: #DDE6ED;
+  }
+  
+.project-link:hover {
+color: #DDE6ED;
+transition: fade-in;
+}
+.project-link:visited:hover {
+color: #000000;
+transition: fade-in;
+}
+
+.project-img {
+  max-width: 5000px;
+  max-height: 100%;
+}
+
+.linkedin-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+.linkedin,
+.linkedin-mess {
+  border: dotted;
+  border-radius: 13%;
+  border-color: #DDE6ED;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.linkedin-mess {
+  position: absolute;
+  top: 47%; /* Adjust this value slightly */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  border-color: #40F8FF;
+}
+
+.linkedin-container:hover .linkedin {
+  opacity: 0;
+}
+
+.linkedin-container:hover .linkedin-mess {
+  opacity: 1;
+}
+.footer {
+    background-color: #000000;
+    border: dotted;
+    border-color: #DDE6ED;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    padding: 2%;
+  }
